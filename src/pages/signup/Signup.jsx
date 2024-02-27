@@ -200,17 +200,17 @@
     }, [watchPwd, errors.password, specialChar]);
 
       return (
-        <div className="w-full max-w-[520px] float-right p-10 bg-white rounded-xl border border-[#EDEDED]">
+        <div className="w-full max-w-[520px] float-left p-10 bg-white rounded-xl border border-[#EDEDED]">
             <div className="w-full float-left flex flex-col">
                 <p className="text-[22px] text-[#666666] font-familty-semibold">Start your free trial {currentSmiley}</p>
                 <span className="text-base text-[#888888] font-familty-medium">Get started with a demo account on Wati</span>
             </div>
-            <div className="w-full float-left flex gap-x-4 mt-6">
-                <button type="button" className="flex w-1/2 justify-center items-center gap-x-1 rounded-md py-2.5 px-2 font-familty-medium text-sm border border-[#EDEDED] bg-[#F8F8F8] text-[#777777]">
-                    <img src={Google} alt="Google"/><span>Sign up with google</span>
+            <div className="w-full float-left flex flex-col sm:flex-row gap-y-2 gap-x-4 mt-6">
+                <button type="button" className="flex w-full sm:w-1/2 justify-center items-center gap-x-1 rounded-md py-2.5 px-2 font-familty-medium text-sm border border-[#EDEDED] bg-[#F8F8F8] text-[#777777]">
+                    <img className="flex-shrink-0" src={Google} alt="Google"/><span>Sign up with google</span>
                 </button>
-                <button type="button" className="flex w-1/2 justify-center items-center gap-x-1 rounded-md py-2.5 px-2 font-familty-medium text-sm border border-[#EDEDED] bg-[#F8F8F8] text-[#777777]">
-                    <img src={FbIcon} alt="Google"/><span>Sign up with facebook</span>
+                <button type="button" className="flex w-full sm:w-1/2 justify-center items-center gap-x-1 rounded-md py-2.5 px-2 font-familty-medium text-sm border border-[#EDEDED] bg-[#F8F8F8] text-[#777777]">
+                    <img className="flex-shrink-0 mr-1" src={FbIcon} alt="Google"/><span>Sign up with facebook</span>
                 </button>
             </div>
             <div className="w-full float-left mt-6">
